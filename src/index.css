@@ -8,89 +8,128 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Afro-futuristic color palette - warm African earth tones + tech accents */
+    --background: 28 25% 97%;
+    --foreground: 25 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep ochre/terracotta */
+    --primary: 18 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 18 75% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Rich gold */
+    --secondary: 42 78% 55%;
+    --secondary-foreground: 25 30% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: Tech cyan/deep blue */
+    --accent: 200 85% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-soft: 200 75% 92%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted: Warm neutral */
+    --muted: 28 20% 92%;
+    --muted-foreground: 25 15% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 28 20% 88%;
+    --input: 28 20% 88%;
+    --ring: 18 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom design tokens for immersive experience */
+    --sahara-sand: 38 60% 75%;
+    --sahara-dune: 32 55% 60%;
+    --tribal-brown: 25 35% 30%;
+    --gold-shimmer: 45 90% 65%;
+    --deep-ocean: 210 70% 25%;
+    --tech-glow: 190 100% 60%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(18 65% 45%), hsl(42 78% 55%));
+    --gradient-gold: linear-gradient(120deg, hsl(42 78% 55%), hsl(45 90% 65%));
+    --gradient-sunset: linear-gradient(180deg, hsl(32 55% 60%), hsl(18 65% 45%), hsl(25 35% 30%));
+    --gradient-tech: linear-gradient(135deg, hsl(200 85% 45%), hsl(190 100% 60%));
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsla(25 30% 15% / 0.7) 100%);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsla(42 78% 55% / 0.3);
+    --shadow-elevation: 0 10px 40px hsla(25 30% 15% / 0.15);
+    --shadow-depth: 0 20px 60px hsla(25 30% 15% / 0.25);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 28 25% 97%;
+    --sidebar-foreground: 25 30% 15%;
+    --sidebar-primary: 18 65% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 20% 92%;
+    --sidebar-accent-foreground: 25 30% 15%;
+    --sidebar-border: 28 20% 88%;
+    --sidebar-ring: 18 65% 45%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode: "Sahara Night" theme */
+    --background: 25 30% 8%;
+    --foreground: 28 25% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 25% 12%;
+    --card-foreground: 28 25% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 25% 12%;
+    --popover-foreground: 28 25% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 42 78% 55%;
+    --primary-foreground: 25 30% 8%;
+    --primary-glow: 42 88% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 18 60% 40%;
+    --secondary-foreground: 28 25% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 190 100% 60%;
+    --accent-foreground: 25 30% 8%;
+    --accent-soft: 200 40% 20%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --muted: 25 20% 18%;
+    --muted-foreground: 28 15% 60%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 28 25% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 42 78% 55%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 30% 8%), hsl(18 60% 25%));
+    --gradient-gold: linear-gradient(120deg, hsl(42 78% 55%), hsl(45 90% 65%));
+    --gradient-sunset: linear-gradient(180deg, hsl(25 30% 8%), hsl(18 50% 20%), hsl(25 35% 15%));
+    --gradient-tech: linear-gradient(135deg, hsl(200 70% 35%), hsl(190 100% 60%));
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsla(25 30% 8% / 0.8) 100%);
+
+    --shadow-glow: 0 0 50px hsla(42 78% 55% / 0.4);
+    --shadow-elevation: 0 10px 40px hsla(0 0% 0% / 0.5);
+    --shadow-depth: 0 20px 60px hsla(0 0% 0% / 0.7);
+
+    --sidebar-background: 25 25% 12%;
+    --sidebar-foreground: 28 25% 95%;
+    --sidebar-primary: 42 78% 55%;
+    --sidebar-primary-foreground: 25 30% 8%;
+    --sidebar-accent: 25 20% 18%;
+    --sidebar-accent-foreground: 28 25% 95%;
+    --sidebar-border: 25 20% 20%;
+    --sidebar-ring: 42 78% 55%;
   }
 }
 
@@ -101,5 +140,80 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom utilities for immersive experience */
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .text-gradient-hero {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .glow-gold {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/70 dark:bg-black/30;
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  .tribal-pattern {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, hsl(var(--primary) / 0.05) 10px, hsl(var(--primary) / 0.05) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, hsl(var(--secondary) / 0.03) 10px, hsl(var(--secondary) / 0.03) 20px);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes shimmer {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsla(42 78% 55% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsla(42 78% 55% / 0.6);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 }

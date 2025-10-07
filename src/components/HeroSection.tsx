@@ -63,16 +63,16 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto pt-4 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
             <div className="glass-effect rounded-lg p-4">
-              <div className="text-3xl font-bold text-gradient-gold">2000+</div>
-              <div className="text-sm text-muted-foreground">Œuvres</div>
+              <div className="text-3xl font-bold text-gradient-gold">14</div>
+              <div className="text-sm text-muted-foreground">Œuvres 3D</div>
             </div>
             <div className="glass-effect rounded-lg p-4">
-              <div className="text-3xl font-bold text-gradient-gold">12</div>
-              <div className="text-sm text-muted-foreground">Salles 3D</div>
+              <div className="text-3xl font-bold text-gradient-gold">5</div>
+              <div className="text-sm text-muted-foreground">Salles</div>
             </div>
             <div className="glass-effect rounded-lg p-4">
-              <div className="text-3xl font-bold text-gradient-gold">3</div>
-              <div className="text-sm text-muted-foreground">Langues</div>
+              <div className="text-3xl font-bold text-gradient-gold">14</div>
+              <div className="text-sm text-muted-foreground">Points QR</div>
             </div>
           </div>
 
